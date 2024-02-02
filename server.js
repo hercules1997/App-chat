@@ -14,4 +14,6 @@ io.addListener("connection", (socket) => {
   });
 });
 
-servidorHTTP.listen(4040);
+const port = process.env.PORT || 4040
+
+servidorHTTP.listen(port);
