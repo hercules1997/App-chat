@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Trench';
+  font-weight: 400;
+  src: url('./assets/trench100free.otf');
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: 'montserrat';
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #040e29;
+}
+
+header {
+  font-family: 'Trench';
+  background-color: #000001;
+  color: #fff;
+  width: 100%;
+  max-width: 1060px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+
+  &>img {
+    max-height: 3rem;
+    margin-right: 0.2rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-width: 70%;
+  flex-grow: 1;
+}
+
+#mensagens {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 75%;
+  background-color: #1c203b6f;
+  flex-grow: 1;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.mensagem {
+  background-color: #040e29;
+  color: #fff;
+  width: 85%;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#texto {
+  background-color: #1c203b6f !important;
+}
+
+#mensagens>.mensagem:last-of-type {
+  background-color: #040e29;}
+
+#envio-mensagens {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 40%;
+  max-height: 3rem;
+
+  &>input {
+    flex-grow: 1;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+  }
+
+  &>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #040e29;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 15px;
+    margin-left: 0.5rem;
+
+    &:hover {
+      background-color: #0b6f1a;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 90%;
+  }
+}
